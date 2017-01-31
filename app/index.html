@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>4 2 Etsy Recreation</title>
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0//css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <header class="nav-bar">
+      <div class="top-header">
+      <a class="logo" href="#"><img src="images/Etsy_logo.png" alt=""></a>
+      <input type="text" name="search" class="search-bar">
+      <input type="submit" name="search-button" class="search-button">
+      <div class="right-side-of-nav">
+      <a class="navlink" href="#">Sell on Etsy</a>
+      <a class="navlink" href="">Register</a>
+      <button type="button" class="sign-button btn btn-default navbar-btn">Sign in</button>
+      <div class="cart">
+      <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+      <div class="carting">
+      <span class="cartlabel">Cart</span>
+      </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    </div>
+    <div class="bottom-nav">
+      <ul class="nav-listers">
+        <li><a href="">Clothing &amp; Accessories</a></li>
+        <li><a href="">Jewelry</a></li>
+        <li><a href="">Craft Supplies &amp; Tools</a></li>
+        <li><a href="">Weddings</a></li>
+        <li><a href="">Entertainment</a></li>
+        <li><a href="">Home &amp; Living</a></li>
+        <li><a href="">Kids &amp; Baby</a></li>
+        <li><a href="">Vintage</a></li>
+      </ul>
+    </div>
+    </header>
+  <div class="container">
+    <div class="row product-contain">
+
+    </div>
+    <!-- <div class="col-md-3">
+      <div class="picture">
+        <div class="image">
+          <img src="https://www.fillmurray.com/238/238" alt="">
+          <div class="labeller">
+            <span class="pic-label">im a label</span>
+            <br>
+            <span class="artist">im who made it</span>
+            <span class="prices">heres my price</span>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+  <script id="tile-template" type="text/x-handlebars-template">
+    <div class="col-md-3">
+      <div class="picture">
+        <div class="image">
+          <img class="photo" src="{{ imageOf }}" alt="">
+          <div class="labeller">
+            <span class="pic-label">{{ title }}</span>
+            <br>
+            <span class="artist">{{ maker }}</span>
+            <span class="prices">${{ priced }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </script>
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
