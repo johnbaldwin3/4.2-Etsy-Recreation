@@ -89,10 +89,25 @@ Right side nav (sign in button, links, car)
   color: #0192B5;
 }
 
+.links-button {
+  display: inline-block;
+  padding-right: 15px;
+  border-right: 1px solid #eee;
+}
 
 .cart {
+  position: relative;
+  top: 16px;
+  margin-left: 14px;
   color: #666666;
   display: inline-block;
+    .cart:hover {
+      color: #888;
+    }
+}
+
+.carting {
+  color: #888888;
 }
 
 .right-side-of-nav {
