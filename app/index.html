@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
+    <div class="container-fluid">
     <header class="nav-bar">
       <div class="top-header">
         <div class="left-nav">
@@ -32,7 +33,7 @@
     </div>
     <div class="bottom-nav">
       <ul class="nav-listers">
-        <li><a href="">Clothing &amp; Accessories</a></li>
+        <li class="nav-list"><a href="">Clothing &amp; Accessories</a></li>
         <li><a href="">Jewelry</a></li>
         <li><a href="">Craft Supplies &amp; Tools</a></li>
         <li><a href="">Weddings</a></li>
@@ -43,23 +44,96 @@
       </ul>
     </div>
     </header>
-
+    </div>
+  <div id="wrappers-delight" class="container-fluid">
+    <!-- <div class="col-md12">
+      <div class="row">
+        <div class="col-md-1">
+          <span>Show results for:</span>
+        </div>
+        <div class="col-md-3"><span>Top categories for "clemson tigers"</span></div>
+      </div>
+    </div> -->
+    <div class="row">
+  <!-- <div class="col-md-12"> -->
+    <div class="col-md-2">
+      <span>Show results for:</span>
       <aside class="aside">
         <div>
-          <h5>some stuff</h5>
+          <h6 class="aside-title">All categories</h6>
+          <ul class="options-aside">
+            <li><a class="opt-li" href=""><span>Home &amp; Living</span></a></li>
+            <li><a  class="opt-li" href=""><span>Jewelry</span></a></li>
+            <li><a class="opt-li" href=""><span>Accessories</span></a></li>
+            <li><a class="opt-li" href=""><span>Clothing</span></a></li>
+            <li><a class="opt-li" href=""><span>Art &amp; Collectibles</span></a></li>
+            <li><a class="opt-li" href=""><span>Craft Supplies &amp; Tools</span></a></li>
+            <li><a class="opt-li" href=""><span>Bags &amp; Purses</span></a></li>
+            <li><a class="opt-li" href=""><span>Paper &amp; Party Supplies</span></a></li>
+            <li><a class="opt-li" href=""><span>Bath &amp; Beauty</span></a></li>
+            <li><a class="opt-li" href=""><span>Toys &amp; Games</span></a></li>
+            <li><a class="opt-li" href=""><span>Electronics &amp; Accessories</span></a></li>
+            <li><a class="opt-li" href=""><span>Pet Supplies</span></a></li>
+            <li><a class="opt-li" href=""><span>Weddings</span></a></li>
+            <li><a class="opt-li" href=""><span>Shoes</span></a></li>
+            <li><a class="opt-li" href=""><span>Books, Movies &amp; Music</span></a></li>
+          </ul>
         </div>
       </aside>
-  <div class="container">
-  <!-- <div class="col-md-12"> -->
-    <div class="row product-contain">
-
+      <aside class="aside">
+        <div>
+          <h6 class="aside-title">All categories</h6>
+          <ul class="options-aside">
+            <li><a class="opt-li" href=""><span>Home &amp; Living</span></a></li>
+            <li><a  class="opt-li" href=""><span>Jewelry</span></a></li>
+            <li><a class="opt-li" href=""><span>Accessories</span></a></li>
+            <li><a class="opt-li" href=""><span>Clothing</span></a></li>
+            <li><a class="opt-li" href=""><span>Art &amp; Collectibles</span></a></li>
+            <li><a class="opt-li" href=""><span>Craft Supplies &amp; Tools</span></a></li>
+            <li><a class="opt-li" href=""><span>Bags &amp; Purses</span></a></li>
+            <li><a class="opt-li" href=""><span>Paper &amp; Party Supplies</span></a></li>
+            <li><a class="opt-li" href=""><span>Bath &amp; Beauty</span></a></li>
+            <li><a class="opt-li" href=""><span>Toys &amp; Games</span></a></li>
+            <li><a class="opt-li" href=""><span>Electronics &amp; Accessories</span></a></li>
+            <li><a class="opt-li" href=""><span>Pet Supplies</span></a></li>
+            <li><a class="opt-li" href=""><span>Weddings</span></a></li>
+            <li><a class="opt-li" href=""><span>Shoes</span></a></li>
+            <li><a class="opt-li" href=""><span>Books, Movies &amp; Music</span></a></li>
+          </ul>
+        </div>
+      </aside>
     </div>
-
-  </div>
+    <div class="col-md-10 pic-content">
+      <span>Top categories for "clemson tigers"</span>
+      <div class="row product-contain">
+        <!--product/pictures template inside here-->
+      </div>
+      <nav aria-label="Page navigation">
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </div> <!--end of wrappers delight-->
+</div> <!--end of container-->
   <!-- </div> -->
   <script id="tile-template" type="text/x-handlebars-template">
-    <div class="col-md-3">
-      <div class="row">
+    <div class="col-md-3 pix">
+
       <div class="picture">
         <div class="image">
           <img class="photo" src="{{ imageOf }}" alt="">
@@ -68,10 +142,11 @@
             <br>
             <span class="artist">{{ maker }}</span>
             <span class="prices">${{ priced }}</span>
-          </div>
-        </div>
-      </div>
-    </div>
+          </div> <!--end of labeller div-->
+        </div> <!--end of image div-->
+      </div> <!--end of picture div-->
+    </div> <!--end of col-md-3 (pix)-->
+
   </script>
     <script src="js/bundle.js"></script>
   </body>

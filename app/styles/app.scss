@@ -1,10 +1,25 @@
 
+
+
 // Bootstrap Variables
+/***********************************
+variables in sass
+************************************/
+// $border-bot: 1px solid #CBCCC9;
+// $border-right: 1px solid #E1E3DF;
+// $border-left: 1px solid #E1E3DF;
+// $border-right: 1px solid #E1E3DF;
 $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 $grid-gutter-width: 0px;
+#wrappers-delight {
+  margin: 0;
+  padding: 0;
+}
 
 // Import Bootstrap
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
 
 body {
   background-color: #F6F5F1;
@@ -54,6 +69,12 @@ header {
 /************************************
     search bar, wrapper, button
 ************************************/
+.left-nav {
+  display: inline-block;
+  margin-top: 25px;
+  width: 50%;
+}
+
 .search-wrapper {
   display: inline-block;
 }
@@ -66,6 +87,7 @@ header {
   height: 28px;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
+  border: 1px solid #CFCBC8;
 }
 
 .search-button {
@@ -80,14 +102,33 @@ header {
 /************************************
 Right side nav (sign in button, links, car)
 ************************************/
+
+.btn-default:hover {
+    color: #0192B5 ;
+    background-color: white;
+    border-color: #0192B5;
+}
+
 .sign-button {
   color: #0192B5;
   border-color: #0192B5;
+
+  .sign-button:hover {
+    background-color: #fff;
+    color: #0192B5;
+  }
 }
 
 .navlink {
   color: #0192B5;
+  padding-right: 20px;
+
+    a:focus {
+    text-decoration: none;
+  }
+
 }
+
 
 .links-button {
   display: inline-block;
@@ -98,16 +139,28 @@ Right side nav (sign in button, links, car)
 .cart {
   position: relative;
   top: 16px;
+  height: 60px;
   margin-left: 14px;
   color: #666666;
   display: inline-block;
-    .cart:hover {
-      color: #888;
-    }
+
 }
 
 .carting {
   color: #888888;
+}
+
+
+
+.cart:hover {
+  color: black;
+}
+
+.cart:hover {
+  color: black;
+  .carting {
+    color: black;
+  }
 }
 
 .right-side-of-nav {
@@ -115,19 +168,23 @@ Right side nav (sign in button, links, car)
   float: right;
   margin-right: 55px;
 }
-.left-nav {
-  display: inline-block;
-  margin-top: 25px;
-  width: 50%;
-}
+
+/************************************
+Right side nav (sign in button, links, car)
+************************************/
+
 .bottom-nav {
   height: 40px;
   border-top: 1px solid #d2d2d2;
+  display: flex;
+  align-items: center;
+
 
 }
 
 .nav-listers {
-  vertical-align: middle;
+  margin: 0 auto;
+  width: 100%;
 }
 .nav-listers > li {
   display: inline;
@@ -138,21 +195,36 @@ Right side nav (sign in button, links, car)
   a {
     color: #777777;
   }
+
+  a:hover {
+    text-decoration: none;
+  }
 }
 
 /************************************
   Picture styling (template aid)
 ************************************/
+.product-contain {
+  //margin: 0px;
+  padding-top: 60px;
+  padding-left: 75px;
+}
 .picture {
   //position: relative;
-  margin: 12px auto;
-  height: 230px;
-  width: 238px;
+
+  margin: 5px;
+  margin-bottom: 10px;
+  height: 100%;
+  width: 93%;
+  border-bottom: 1px solid #CBCCC9;
+  border-right: 1px solid #E1E3DF;
+  border-left: 1px solid #E1E3DF;
+  border-top: 1px solid #E1E3DF;
 }
 
 .labeller {
   //position: absolute;
-  width: 100%;
+  //width: 100%;
   overflow: hidden;
   background-color: white;
   top: 200px;
@@ -176,19 +248,54 @@ Right side nav (sign in button, links, car)
 }
 
 .photo {
-  width: 238px;
+  width:100%;
 
+}
+
+// .pix {
+//   margin: 0;
+//   width: 254px;
+// }
+
+.pic-content {
+  //margin-left: 1px;
 }
 
 /************************************
   Aside Nav Options
 ************************************/
 .aside {
-  float:left;
+  //float:left;
   display: inline-block;
-  height: 500px;
   background-color: #fff;
+  width: 232px;
+  margin-left: 35px;
+  margin-top: 60px;
+  border-bottom: 1px solid #CBCCC9;
+  border-right: 1px solid #E1E3DF;
+  border-left: 1px solid #E1E3DF;
+  border-top: 1px solid #E1E3DF;
 }
+
+.aside-title {
+  padding-top: 4px;
+  padding-left: 10px;
+}
+.options-aside {
+  padding-left: 18px;
+  color: #3292B5;
+  font-size: 12px;
+  li {
+    list-style: none;
+    padding: 3px;
+  }
+}
+
+.opt-li:hover{
+  color: #3292B5;
+  text-decoration: none;
+}
+
 /** what to dooooooo
 //text overflow elipses
 //whitespace no wrap
