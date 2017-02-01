@@ -1,10 +1,11 @@
 
 // Bootstrap Variables
 $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
-
 $grid-gutter-width: 0px;
+
 // Import Bootstrap
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
 body {
   background-color: #F6F5F1;
 }
