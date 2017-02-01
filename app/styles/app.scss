@@ -2,6 +2,7 @@
 // Bootstrap Variables
 $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 
+$grid-gutter-width: 0px;
 // Import Bootstrap
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 body {
@@ -25,45 +26,68 @@ header {
 
 }
 
+/************************************
+  Nav Bar
+************************************/
 .top-header {
-  height: 68px;
+  height: 82px;
 }
+
+.nav-bar {
+  width: 100%;
+  border-bottom: 1px solid #d2d2d2;
+}
+/************************************
+  Logo (left side nav)
+************************************/
 .logo{
   display: inline-block;
   margin-left: 3%;
   margin-right: 15px;
 }
+
 #etsy-logo {
   height: 35px;
   display: inline-block;
-
 }
+/************************************
+    search bar, wrapper, button
+************************************/
 .search-wrapper {
   display: inline-block;
 }
+
 .search-bar {
   display: inline-block;
-  width: 13%;
+  width: 350px;
+  background-color: #FBFBFA;
   margin-right: -4px;
   height: 28px;
-  border-left-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
-.nav-bar {
-  width: 100%;
-  border-bottom: 1px solid #d2d2d2;
+
+.search-button {
+  color: white;
+  background-color: #00ABC5;
+  border: 1px solid #00ABC5;
+  padding: 3px 13px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
+
+/************************************
+Right side nav (sign in button, links, car)
+************************************/
 .sign-button {
   color: #0192B5;
   border-color: #0192B5;
 }
+
 .navlink {
   color: #0192B5;
+}
 
-}
-.search-button {
-  color: white;
-  background-color: #00ABC5;
-}
 
 .cart {
   color: #666666;
@@ -73,6 +97,12 @@ header {
 .right-side-of-nav {
   display: inline-block;
   float: right;
+  margin-right: 55px;
+}
+.left-nav {
+  display: inline-block;
+  margin-top: 25px;
+  width: 50%;
 }
 .bottom-nav {
   height: 40px;
@@ -93,19 +123,16 @@ header {
     color: #777777;
   }
 }
+
+/************************************
+  Picture styling (template aid)
+************************************/
 .picture {
   //position: relative;
-  margin: 20px auto;
+  margin: 12px auto;
   height: 230px;
   width: 238px;
-
 }
-/** what to dooooooo
-//text overflow elipses
-//whitespace no wrap
-//absolute off
-//set margins of each row
-**/
 
 .labeller {
   //position: absolute;
@@ -115,24 +142,40 @@ header {
   top: 200px;
   white-space: nowrap;
   text-overflow: ellipsis;
-  .pic-label {
-    font-size: 12px;
-  }
 
-  .artist {
-    font-size: 10px;
-    color: #9A9A9A;
-  }
+    .pic-label {
+      font-size: 12px;
+    }
 
-  .prices {
-    color: #78C042;
-    font-size: 12px;
-    float: right;
-  }
+    .artist {
+      font-size: 10px;
+      color: #9A9A9A;
+    }
+
+    .prices {
+      color: #78C042;
+      font-size: 12px;
+      float: right;
+    }
 }
-
 
 .photo {
   width: 238px;
 
 }
+
+/************************************
+  Aside Nav Options
+************************************/
+.aside {
+  float:left;
+  display: inline-block;
+  height: 500px;
+  background-color: #fff;
+}
+/** what to dooooooo
+//text overflow elipses
+//whitespace no wrap
+//absolute off
+//set margins of each row
+**/

@@ -10,9 +10,11 @@
   <body>
     <header class="nav-bar">
       <div class="top-header">
+        <div class="left-nav">
       <a class="logo" href="#"><img src="images/Etsy_logo.png" alt=""></a>
       <input type="text" name="search" class="search-bar">
       <input type="submit" name="search-button" class="search-button">
+        </div>
       <div class="right-side-of-nav">
       <a class="navlink" href="#">Sell on Etsy</a>
       <a class="navlink" href="">Register</a>
@@ -39,26 +41,23 @@
       </ul>
     </div>
     </header>
+
+      <aside class="aside">
+        <div>
+          <h5>some stuff</h5>
+        </div>
+      </aside>
   <div class="container">
+  <!-- <div class="col-md-12"> -->
     <div class="row product-contain">
 
     </div>
-    <!-- <div class="col-md-3">
-      <div class="picture">
-        <div class="image">
-          <img src="https://www.fillmurray.com/238/238" alt="">
-          <div class="labeller">
-            <span class="pic-label">im a label</span>
-            <br>
-            <span class="artist">im who made it</span>
-            <span class="prices">heres my price</span>
-          </div>
-        </div>
-      </div>
-    </div> -->
+
   </div>
+  <!-- </div> -->
   <script id="tile-template" type="text/x-handlebars-template">
     <div class="col-md-3">
+      <div class="row">
       <div class="picture">
         <div class="image">
           <img class="photo" src="{{ imageOf }}" alt="">
