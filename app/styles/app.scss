@@ -178,8 +178,7 @@ Right side nav (sign in button, links, car)
   border-top: 1px solid #d2d2d2;
   display: flex;
   align-items: center;
-
-
+  box-shadow: 0 8px 6px -7px #d2d2d2;
 }
 
 .nav-listers {
@@ -200,20 +199,32 @@ Right side nav (sign in button, links, car)
     text-decoration: none;
   }
 }
+/************************************
+top of product and aside headings
+************************************/
+#cats {
+  font-size: 18px;
+  margin-top: -4px;
+}
+
+#results {
+  font-size: 12px;
+  font-weight: bold;
+}
+
 
 /************************************
   Picture styling (template aid)
 ************************************/
 .product-contain {
   //margin: 0px;
-  padding-top: 60px;
-  padding-left: 75px;
+  // padding-top: 60px;
+  // padding-left: 75px;
 }
 .picture {
   //position: relative;
-
-  margin: 5px;
-  margin-bottom: 10px;
+  //margin: 5px;
+  margin-bottom: 20px;
   height: 100%;
   width: 93%;
   border-bottom: 1px solid #CBCCC9;
@@ -230,6 +241,7 @@ Right side nav (sign in button, links, car)
   top: 200px;
   white-space: nowrap;
   text-overflow: ellipsis;
+  padding: 6px;
 
     .pic-label {
       font-size: 12px;
@@ -258,7 +270,8 @@ Right side nav (sign in button, links, car)
 // }
 
 .pic-content {
-  //margin-left: 1px;
+  padding-top: 42px;
+  padding-left: 70px;
 }
 
 /************************************
@@ -269,8 +282,8 @@ Right side nav (sign in button, links, car)
   display: inline-block;
   background-color: #fff;
   width: 232px;
-  margin-left: 35px;
-  margin-top: 60px;
+  // margin-left: 35px;
+  // margin-top: 60px;
   border-bottom: 1px solid #CBCCC9;
   border-right: 1px solid #E1E3DF;
   border-left: 1px solid #E1E3DF;
@@ -281,19 +294,49 @@ Right side nav (sign in button, links, car)
   padding-top: 4px;
   padding-left: 10px;
 }
+
+.left-aside {
+  padding-top: 42px;
+  padding-left: 40px;
+
+}
 .options-aside {
   padding-left: 18px;
-  color: #3292B5;
+  color: #0192B5;
   font-size: 12px;
   li {
     list-style: none;
     padding: 3px;
+    color: #0192B5;
   }
 }
 
+.opt-li a {
+  color: #0192B5;
+}
 .opt-li:hover{
-  color: #3292B5;
-  text-decoration: none;
+  color: #0192B5;
+
+}
+
+/***********************
+2nd aside column styling
+***********************/
+
+.aside-title-shop {
+  padding-top: 4px;
+  padding-left: 10px;
+  color: #0192B5;
+}
+
+.locale {
+  padding-left: 18px;
+  color: #0192B5;
+}
+.results {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px 0;
 }
 
 /** what to dooooooo

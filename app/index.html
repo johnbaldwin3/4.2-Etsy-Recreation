@@ -56,8 +56,8 @@
     </div> -->
     <div class="row">
   <!-- <div class="col-md-12"> -->
-    <div class="col-md-2">
-      <span>Show results for:</span>
+    <div class="col-md-2 left-aside">
+      <span id="results">Show results for:</span>
       <aside class="aside">
         <div>
           <h6 class="aside-title">All categories</h6>
@@ -80,9 +80,22 @@
           </ul>
         </div>
       </aside>
+      <span class="results"> Refine your search </span>
       <aside class="aside">
         <div>
-          <h6 class="aside-title">All categories</h6>
+          <h6 class="aside-title-shop">Shop location</h6>
+          <div class="locale">
+          <div class="radio">
+            <label>
+              <input type="radio" name="optradio">Anywhere
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optradio">United States
+            </label>
+          </div>
+          </div>
           <ul class="options-aside">
             <li><a class="opt-li" href=""><span>Home &amp; Living</span></a></li>
             <li><a  class="opt-li" href=""><span>Jewelry</span></a></li>
@@ -104,7 +117,7 @@
       </aside>
     </div>
     <div class="col-md-10 pic-content">
-      <span>Top categories for "clemson tigers"</span>
+      <span id="cats">Top categories for "clemson tigers"</span>
       <div class="row product-contain">
         <!--product/pictures template inside here-->
       </div>
