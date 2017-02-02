@@ -311,7 +311,7 @@ top of product and aside headings
   }
 }
 
-.opt-li a {
+.opt-li > a {
   color: #0192B5;
 }
 .opt-li:hover{
@@ -326,19 +326,32 @@ top of product and aside headings
 .aside-title-shop {
   padding-top: 4px;
   padding-left: 10px;
-  color: #0192B5;
+  color: #444444;
 }
 
 .locale {
   padding-left: 18px;
   color: #0192B5;
+  bottom-margin: 0px;
 }
 .results {
   font-size: 12px;
   font-weight: bold;
   padding: 10px 0;
+  display: inline-block;
+  margin-top: 15px;
+}
+.refinery {
+  height: 50px;
 }
 
+.chooser {
+  border-bottom: 1px solid #E1E3DF;
+}
+
+.typers {
+  border-bottom: 1px solid #E1E3DF;
+}
 /** what to dooooooo
 //text overflow elipses
 //whitespace no wrap
